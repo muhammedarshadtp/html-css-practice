@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="intex.css">
+    <script src="asy.js" defer></script>
     <style>
         h2 {
             color: brown;
@@ -26,6 +27,9 @@
     <img src="https://imgs.search.brave.com/tfPYN2CrT7dXPGik14Qo28Y-kJJliuFOkwOZzLFVH_I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvY3Jp/c3RpYW5vLXJvbmFs/ZG8tY29vbC1mcGYt/dW5pZm9ybS1iYWNr/LXNob3QtaWRsd2Y0/Ynczb25ibXFqby5q/cGc" alt="Ronaldo image">
     </div>
     <h1 id="hai">Hello Mac</h1>
+    <button id="btn"> click Me</button>
+   <button id="btn"> click Me</button>
+    <p class="para"> hai</p>
 
     <table border="1">
         <tr>
@@ -56,4 +60,19 @@
     
 
 </body>
+<script>
+  const element=  document.querySelector("#hai")
+  element.textContent="Hai Aswin"
+  console.log(element.textContent)
+
+const button=  document.querySelector("#btn")
+  const text =document.querySelector(".para")
+
+  button.addEventListener('click',()=>{
+    text.textContent="Click the button"
+    text.style.color='Red'
+
+  })
+
+</script>
 </html>
